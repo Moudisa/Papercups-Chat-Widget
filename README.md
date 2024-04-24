@@ -1,25 +1,46 @@
-# Getting Started with Create React App
+# Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Papercups-chat-widget-demo.webm](https://github.com/Moudisa/Papercups-Chat-Widget/assets/37015810/22153174-b543-4c3e-8c81-d1bd1dfc146e)
 
-## Available Scripts
+# Usage
+For adding the chat widget component into your react app, you need to perform the following steps:
+1. Clone the github repository
+2. Add the ChatWidgetComponent.js and ChatWidgetComponent.css files from this repository into your own app
+3. Add the import statement and the component name in your file from where you want the chat window to render.
+   
+   `import ChatWidgetComponent from './ChatWidgetComponent';`
+   
+   `<ChatWidgetComponent/>`
+5. You can remove the H1 heading in ChatWidgetComponent.js which is the first tag inside return block to avoid the extra heading.
 
-In the project directory, you can run:
+# Install
+Open your terminal and run the following command in order to be able to use the papercups library
 
-### `npm start`
+    npm install --save @papercups-io/chat-widget
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Sign up at https://app.papercups.io/register to get your account token. Your account token is what you'll use to pass in as the `accountId` prop below.
+Replace the account token and inbox token in the ChatWidgetComponent.js file inside the div tag called chat-widget-body with your own tokens.
 
+// Pass in your Papercups account token here after signing up
+
+  token: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx',
+  
+// Specify a Papercups inbox
+
+  inbox: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx',
+
+# Development
+To build the project, run npm start in the root directory. (If you're running it for the first time, you'll have to run npm install first.)
+
+`npm install`
+
+`npm start`
+
+This will start a development server on http://localhost:3000 by default, and open up the example app in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
+`npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,44 +48,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Questions?
+You can check out the papercups github repository for more information
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://github.com/papercups-io/chat-window
+https://github.com/papercups-io/chat-widget
